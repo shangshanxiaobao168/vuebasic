@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h2>过滤器的使用</h2>
+    <UseFilter></UseFilter>
+    <hr>
+    <h2>使用v-bind给标签赋值,绑定变量</h2>
+    <UseVbind></UseVbind>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import UseFilter from '@/views/01.UseFilter.vue';
+import UseVbind from '@/views/02.UseV-bind.vue'
 export default {
-  name: 'App',
+  data() {
+    return {};
+  },
   components: {
-    HelloWorld
-  }
-}
+    UseFilter,
+    UseVbind,
+  },
+  created() {},
+
+  methods: {},
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style scoped></style>
